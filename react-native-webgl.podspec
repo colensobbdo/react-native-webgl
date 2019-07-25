@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.source              = { :git => 'https://github.com/react-community/react-native-webgl.git', :tag => "v#{package['version']}" }
   s.requires_arc        = true
   s.platform            = :ios, '10.0'
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
-  s.source_files        = 'ios/*.{h,m}','cpp/*.{h,c,cpp,mm}'
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'YES' }
+  s.source_files        = 'ios/*.{h,m,mm}','cpp/*.{h,c,cpp,mm}'
   s.framework           = 'OpenGLES'
   s.dependency          'GPUImage'
   s.dependency          'React'
